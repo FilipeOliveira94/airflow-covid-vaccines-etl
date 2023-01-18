@@ -1,0 +1,8 @@
+AWS_ACCESS_KEY = aws_access_key
+AWS_SECRET_KEY = aws_secret_id_key
+DB_USER = username
+DB_PWD = password
+DB_HOST = host
+DB_PORT = port
+DB_DATABASE = dbname
+AWS_REGION = aws_region
