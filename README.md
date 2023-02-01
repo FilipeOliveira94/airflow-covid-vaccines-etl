@@ -13,11 +13,21 @@ Data is also encoded for better storage compression, and the mappings can be fur
 - [Install Docker and Docker-Compose](https://docs.docker.com/get-started/)
 (run it preferably on Linux or WSL)
 
-In the main folder, run:
+In the main folder, run, in this order:
 
-`docker-compose up airflow-init`
+```
+mkdir -p ./dags ./logs ./plugins
 
+echo -e "AIRFLOW_UID=$(id -u)" > .env
+```
+
+```
+docker-compose up airflow-init
+```
+
+```
 `docker-compose up`
+```
 
 This will start the apache airflow services and webserver, which can now be accessed on <http://localhost:8080/>
 
